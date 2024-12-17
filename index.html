@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spending Tracker</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Spending<br>💸Tracker💸</h1>
+      <div class="output-container">
+          <div class="balance"><span class="title">Balance<br><div id="balance-input"></div></span></div>
+          <div class="total-expense"><span class="title">Expense<br><div id="total-expense-input"></div></span></div>
+      </div>
+
+    <p class="input-label">Enter your income</p>
+    <input type="text" placeholder="Enter your income" id="income-input"><br>
+    <button id="add-income-btn" class="btn">Add Income</button>
+
+    <p class="input-label">Enter Expense</p>
+    <input type="text" placeholder="Expense Reason" style="margin-bottom:10px;" id="expense-reason"><br>
+    <input type="text" placeholder="Enter Expense Amount" id="expense-input"><br>
+    <button id="add-expense-btn" class="btn">Add Expense</button>
+
+    <p class="list-text">📋 Expense List</p>
+    <ul id="expense-list"></ul>
+      
+
+    <footer>
+        Developed By Group 11 ❤️
+    </footer>
+</body>
+</html>

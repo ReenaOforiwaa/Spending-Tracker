@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        if (!isNaN(expenseValue) && expenseValue > 0 && expenseValue <= balance) {
+        if (!isNaN(expenseValue) && expenseValue > 0) {
             // Update total expenses and balance
             totalExpense += expenseValue;
             balance -= expenseValue;
@@ -111,8 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
             // Clear inputs
             expenseReasonInput.value = '';
             expenseInput.value = '';
-        } else if (expenseValue > balance) {
-            alert("Expense amount exceeds your current balance!");
         } else {
             alert("Please enter a valid expense amount.");
         }
